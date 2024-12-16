@@ -1,0 +1,71 @@
+@font-face {
+    src: url(/worksans-regular.ttf);
+    font-family: worksans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: worksans;
+    color: #eeecff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(download.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    width: 320px;
+    height: 400px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    transition: all 100ms ease;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    background: transparent;
+    padding: 0 20px;
+}
+input[type="text"]{
+    border: 1px solid #271a69;
+
+}
+input[type="text"] :focus{
+    border: 2px solid #6f00ff;
+
+}
+input[type="submit"]{
+    background: salmon;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+.title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: 900;
+    color: salmon;
+}
